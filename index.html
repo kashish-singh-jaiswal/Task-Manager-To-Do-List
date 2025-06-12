@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="icon" href="logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="logo.png" alt="Logo" width="30" height="30" /> Task Manager
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Task Manager</a></li>
+          <li class="nav-item"><a class="nav-link" href="home.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="home.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <h2 class="heading mt-4">Daily Hourly Planner</h2>
+  <div class="logo mb-4">
+    <img src="logo.png" alt="App Logo" width="80" />
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Add Your Task Here</h1>
+    <form id="task-form" class="mb-3 d-flex gap-2">
+      <input type="text" id="task-input" class="form-control" placeholder="Enter a task" required />
+      <button type="submit" class="btn btn-success">Add Task</button>
+    </form>
+
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <ul id="task-list" class="list-group mt-3"></ul>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
